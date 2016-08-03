@@ -15,10 +15,9 @@
 # Write your function below:
 # Body
 
-
-
-
-
+def right_justify(s):
+    N = 70 - len(s) #max length of column
+    print(" "*N+s)
 
 
 # Write your function above:

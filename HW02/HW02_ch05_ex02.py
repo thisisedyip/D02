@@ -20,8 +20,21 @@
 ################################################################################
 # Write your functions below:
 # Body
+    
+def check_fermat(a, b, c, n):
+    left = a**n + b**n
+    right = c**n
+    if n > 2 and left == right:
+        print("Holy smokes, Fermat was wrong!")
+    else:
+        print("No, that doesn't work.")
 
-
+def check_fermat_ints(a, b, c, n):
+    a = int(input("Provide an input for a: "))
+    b = int(input("Provide an input for b: "))
+    c = int(input("Provide an input for c: "))
+    n = int(input("Provide an input for n: "))
+    check_fermat(a, b, c, n)
 
 
 
@@ -40,6 +53,9 @@ def main():
     check_fermat()
     """
     print("Hello World!")
+    
+    check_fermat_ints(1, 2, 3, 4)
+   
 
 
 
